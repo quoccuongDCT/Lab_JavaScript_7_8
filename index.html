@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen p-4 text-gray-800">
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded shadow">
+        <h1 class="text-2xl font-bold mb-4">Thao tác với Mảng</h1>
+
+        <label class="block mb-2 font-medium">Nhập mảng số nguyên (phân cách bằng dấu cách):</label>
+        <input id="arrayInput" class="w-full p-2 border rounded mb-4" placeholder="VD: 1 2 -3 4 5">
+
+        <label class="block mb-2 font-medium">Nhập mảng số thực (cho câu 9):</label>
+        <input id="floatArrayInput" class="w-full p-2 border rounded mb-4" placeholder="VD: 1.2 3.0 -2.5 4">
+
+        <label class="block mb-2 font-medium">Nhập vị trí 1 và 2 để đổi chỗ (câu 6):</label>
+        <div class="flex gap-2 mb-4">
+            <input id="pos1" type="number" class="w-1/2 p-2 border rounded" placeholder="Vị trí 1">
+            <input id="pos2" type="number" class="w-1/2 p-2 border rounded" placeholder="Vị trí 2">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <button onclick="tongSoDuong()" class="bg-blue-500 text-white py-2 rounded">1. Tổng số dương</button>
+            <button onclick="demSoDuong()" class="bg-blue-500 text-white py-2 rounded">2. Đếm số dương</button>
+            <button onclick="timSoNhoNhat()" class="bg-blue-500 text-white py-2 rounded">3. Số nhỏ nhất</button>
+            <button onclick="timSoDuongNhoNhat()" class="bg-blue-500 text-white py-2 rounded">4. Số dương nhỏ
+                nhất</button>
+            <button onclick="timSoChanCuoi()" class="bg-blue-500 text-white py-2 rounded">5. Số chẵn cuối</button>
+            <button onclick="doiCho()" class="bg-blue-500 text-white py-2 rounded">6. Đổi chỗ</button>
+            <button onclick="sapXepTangDan()" class="bg-blue-500 text-white py-2 rounded">7. Sắp xếp tăng</button>
+            <button onclick="timSoNguyenToDau()" class="bg-blue-500 text-white py-2 rounded">8. Nguyên tố đầu</button>
+            <button onclick="demSoNguyenTrongMangThuc()" class="bg-blue-500 text-white py-2 rounded">9. Đếm số
+                nguyên</button>
+            <button onclick="soSanhDuongAm()" class="bg-blue-500 text-white py-2 rounded">10. So sánh + vs -</button>
+        </div>
+
+        <div id="output" class="p-4 bg-gray-200 rounded text-lg font-medium"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
